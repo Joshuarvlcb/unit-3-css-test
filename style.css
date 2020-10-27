@@ -1,0 +1,67 @@
+:root {
+    --html-background: rgba(246, 177, 177);
+    --shadow: rgba(51, 51, 51);
+    --nav-active: rgba(220, 27, 27);
+    --Spotlight: rgba(171, 171, 171);
+    --Text-background: rgba(211, 211, 211);
+    --Text-color: rgba(111, 111, 111);
+}
+
+html {
+    background-color: var(--html-background);
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 12px;
+}
+
+body {
+    background-color: white;
+    max-width: 1024px;
+    margin: 0 auto;
+    box-shadow: 10px 10px 25px, -10px 10px 25px;
+}
+
+header {
+    background-color: white;
+    width: 100%;
+}
+
+#logolmage {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+p {
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    margin: 15px;
+}
+
+.top ul {
+    margin: 10px;
+}
+
+.top ul li {
+    text-align: center;
+}
+
+.top ul li a {
+    color: white;
+    display: block;
+    font-size: 1.2rem;
+    padding: 5% 0%;
+}
+
+.top ul li a:hover:active {
+    text-shadow: 0px 0px 2px black, 0px 0px 15px white;
+}
+
+img:nth-child(1) {
+    float: right;
+}
+
+.spotlight {
+    background-color: var(--Spotlight);
+    overflow: hidden;
+}
