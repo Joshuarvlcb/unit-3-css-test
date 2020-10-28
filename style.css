@@ -54,15 +54,14 @@ p{
     font-size: 1.2rem;
     line-height: 1.4rem;
     margin: 15px;
+    overflow: visible;
 }
 article img:first-child{
     float: right;
     width: 45%;
     margin: 0px 0px 120px 50px;
-    transform: translateY(60px);
-    transform:rotate(33deg);
+    transform:translateY(60px)rotate(30deg);
     box-shadow:10px -10px 30px; 
-
 }
 .spotlight{
     background-color: var(--Spotlight);
@@ -99,7 +98,7 @@ aside h1{
     text-align: center;
     margin: 20px 0px 25px 0px;
 }
-img{
+aside img{
     display: block;
     width: 30%;
     margin: 0 auto;
@@ -128,17 +127,22 @@ footer ul li{
     justify-content: center;
 }
 #bottom ul{
+    flex-grow: 0;
+    flex-shrink:1;
+    flex-basis: 150px;
+}
+#bottom ul li{
+    list-style: none;
     font-size: 1rem;
     line-height: 1.8rem;
 }
-footer ul{
-    flex:0 1 150px;
-    list-style: none;
-}
+
+
 footer ul li a{
     color: white;
     text-decoration: none;
-
+    text-transform: capitalize;
+    
 }
 footer p{
     color: var(--Text-color);
@@ -183,6 +187,7 @@ footer p{
         font-size: 2.2rem;
         flex-grow: 1;
         flex-shrink: 1;
+        text-transform: capitalize;
 
     }
     nav.top ul li:nth-of-type(1){
@@ -263,8 +268,9 @@ footer p{
         background-color: var(--shadow);
         height: 50px;
         justify-content: center;
-        align-items: center;
+        align-content: center;
         margin-bottom: 0;
+        margin-top:0;
     }
     .top ul li{
         flex:0 1 80px;
