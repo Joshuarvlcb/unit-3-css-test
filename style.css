@@ -157,7 +157,6 @@ footer p{
     body{
         background-color: var(--shadow);
         color: var(--Text-color);
-        overflow-x:hidden ;
     }
 
     aside{
